@@ -1,0 +1,86 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://i.postimg.cc/L6dd1bRf/Captura-de-tela-2024-12-09-112205-Photoroom.png');
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
+    background-repeat: no-repeat; /* Impede repetição da imagem */
+    background-attachment: fixed; /* Faz o fundo permanecer fixo ao rolar a página */
+    color: red; /* Texto padrão em vermelho */
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo preto semi-transparente */
+    color: red; /* Título em vermelho */
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid red;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+    border-radius: 10px;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.9); /* Fundo preto semi-transparente */
+    border: 2px solid red; /* Borda vermelha */
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    color: red; /* Texto vermelho */
+    text-align: center;
+}
+
+.card h2 {
+    color: red; /* Títulos em vermelho */
+}
+
+.card label {
+    color: red; /* Labels em vermelho */
+    font-weight: bold;
+}
+
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid red; /* Borda vermelha */
+    border-radius: 5px;
+    background-color: black; /* Fundo preto */
+    color: red; /* Texto vermelho */
+    font-size: 16px;
+}
+
+button {
+    background-color: red; /* Fundo do botão vermelho */
+    color: black; /* Texto preto */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: black; /* Fundo preto ao passar o mouse */
+    color: red; /* Texto vermelho ao passar o mouse */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo preto semi-transparente */
+    color: red;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid red;
+}

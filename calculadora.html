@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Vanilla</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Calculadora Vanilla</h1>
+    </header>
+    <main class="container">
+        <!-- Calculadora de Cristais -->
+        <div class="card">
+            <h2>Calculadora de Cristal</h2>
+            <label for="quantidade-cristal">Quantos Cristais o cliente quer?</label>
+            <input type="number" id="quantidade-cristal" placeholder="Digite a quantidade de Cristais" oninput="calcularCristal()">
+            <p>Total na Parceria:</p>
+            <input type="text" id="parceria-cristal" readonly value="R$ 0">
+            <p>Total sem Parceria:</p>
+            <input type="text" id="sem-parceria-cristal" readonly value="R$ 0">
+            <button onclick="resetCalc('cristal')">Reset</button>
+        </div>
+
+        <!-- Calculadora de Roupas Sujas -->
+        <div class="card">
+            <h2>Calculadora de Roupas Sujas</h2>
+            <label for="valor-total-roupas">Valor Total:</label>
+            <input type="number" id="valor-total-roupas" placeholder="Digite o valor total" oninput="calcularRoupas()">
+            <p>Parceria (20% de desconto):</p>
+            <input type="text" id="parceria-roupas" readonly value="R$ 0">
+            <p>Sem Parceria (30% de desconto):</p>
+            <input type="text" id="sem-parceria-roupas" readonly value="R$ 0">
+            <button onclick="resetCalc('roupas')">Reset</button>
+        </div>
+
+        <!-- Calculadora de Roupas Sujas Molhadas -->
+        <div class="card">
+            <h2>Calculadora de Roupas Molhadas Ou Suja Molhadas</h2>
+            <label for="valor-total-molhadas">Valor Total:</label>
+            <input type="number" id="valor-total-molhadas" placeholder="Digite o valor total" oninput="calcularMolhadas()">
+            <p>Parceria (50% de desconto):</p>
+            <input type="text" id="parceria-molhadas" readonly value="R$ 0">
+            <p>Sem Parceria (50% de desconto):</p>
+            <input type="text" id="sem-parceria-molhadas" readonly value="R$ 0">
+            <button onclick="resetCalc('molhadas')">Reset</button>
+        </div>
+    </main>
+    <footer>
+        <button onclick="resetAll()">Resetar Tudo</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
